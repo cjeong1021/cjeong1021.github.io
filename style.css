@@ -1,0 +1,138 @@
+/* Style header and create grid */
+header {
+    display: grid;
+    grid-template-columns: 300px 2fr 75px 90px 75px 75px 75px;
+    background-color: #f1beb0;
+    color: #2b2b2b;
+    padding-left: 15px;
+}
+
+/* Put buttons in correct grid position */
+#logo {
+    grid-column: 1;
+}
+#about {
+    grid-column: 3;
+}
+#projects {
+    grid-column: 4;
+}
+#skills {
+    grid-column: 5;
+}
+#contact{
+    grid-column: 6;
+}
+
+/* Style banner */
+.banner{
+    background-image: url("bannerphoto.jpeg");
+    background-size: cover;
+    background-position: center;
+    font-size:30px;
+    padding: 10%;
+    text-align: left;
+    height: 300px;
+}
+
+/* Style website background and text color */
+body {
+    background-color:black;
+    /* background-color:#2b2b2b; */
+    color: white; 
+}
+
+/* Setup grid for skills and projects */
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 1fr 10% 1fr;
+    font-size: 30px;
+}
+
+/* Put skills and projects into correct grid positions */
+h2.languages {
+    grid-row-start: 1;
+}
+div.languages {
+    grid-row-start: 2;
+}
+h4.languages {
+    grid-row: 3;
+}
+div.experience {
+    grid-row-start: 4;
+}
+
+.list {
+    margin: 10px;
+    color: #f1beb0;
+    font-size: 20px;
+    width: 67%;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    padding: 14px 28px;
+    text-align: center;
+    border-left:solid #f1beb0;
+    border-width: 4px;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+}
+
+#skill-1 {
+    display: none;
+}
+#skill-2 {
+    display: none;
+}
+#skill-3 {
+    display: none;
+}
+#project-1 {
+    display: none;
+}
+#project-2 {
+    display: none;
+}
+#project-3 {
+    display: none;
+}
+
+
+/* Button hover effect taken from  http://ianlunn.github.io/Hover/ */
+.hvr-forward {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    /* taken from http://ianlunn.github.io/Hover/ */
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+    /* taken from http://ianlunn.github.io/Hover/ */
+
+}
+
+/* Style button */
+button {
+    display: block;
+    margin: 20px;
+    background-color:#2b2b2b;
+    color: #f1beb0;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 75%;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    white-space: nowrap;
+    padding: 14px 28px;
+    cursor: pointer;
+    text-align: center;
+}
